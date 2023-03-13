@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>The Royal Kingdom of Colchis</title>
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/logo2.png" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="logo"><img src="assets/logo.png" alt="Logo" /></div>
+      <ul>
+        <li>
+          <a href="index.html"> <span class="red">H</span>ome</a>
+        </li>
+        <li>
+          <a href="royalfamily.html"><span class="red">R</span>oyal Family</a>
+        </li>
+        <li>
+          <a href="royalassets.html"><span class="red">R</span>oyal Assets</a>
+        </li>
+        <li>
+          <a href="contact.html"><span class="red">C</span>ontact Us</a>
+        </li>
+      </ul>
+    </nav>
+    <!--Royal assets-->
+    <h1>Nous contacter</h1>
+    <hr />
+
+    <div class="contact">
+      <form>
+        <select>
+          <option selected="selected" value="1">Sexe</option>
+          <option value="2">Monsieur</option>
+          <option value="3">Madame</option>
+          <option value="4">Mademoiselle</option>
+          <option value="5">Autres</option>
+        </select>
+        <br />
+        <div>
+          <label for="name">Nom :</label> <br />
+          <input type="text" id="name" name="user_name" />
+        </div>
+        <div>
+          <label for="mail">e-mail :</label> <br />
+          <input type="email" id="mail" name="user_mail" />
+        </div>
+        <div>
+          <label for="msg">Message :</label><br />
+          <textarea id="msg" name="user_message"></textarea>
+        </div>
+        <button onclick="alerte()">Envoyer</button>
+        <script>
+          function alerte() {
+            alert(
+              "Votre message a bien été envoyé\nIl sera reçu des l'invention d'internet"
+            );
+          }
+        </script>
+        <button type="reset">Effacer</button>
+      </form>
+    </div>
+  </body>
+</html>
